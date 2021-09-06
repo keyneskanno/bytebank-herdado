@@ -14,5 +14,9 @@ public class Gerente extends Funcionario {
 			return false;
 		}
 	}
+	
+	public double getBonificacao() {
+		return super.getBonificacao() + super.salario; //indica que a variável é da classe mae - fica mais facil de entender
+	}
 
 }
